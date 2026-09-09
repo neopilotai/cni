@@ -182,4 +182,11 @@ export const services: Service[] = [
     tags: ["generative UI", "react", "container"],
     Icon: PythonIcon,
   },
+  {
+    name: "Packages Registry",
+    route: "/packages",
+    description: "A private-by-default Docker and OCI image registry with team roles, audit history, and guided pushes.",
+    tags: ["docker", "oci", "team access"],
+    Icon: PythonIcon,
+  },
 ];
