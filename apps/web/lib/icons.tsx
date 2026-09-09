@@ -77,6 +77,15 @@ export function QrIcon(props: IconProps) {
   );
 }
 
+export function PythonIcon(props: IconProps) {
+  return (
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>Python</title>
+      <path d="M12 2c-3.2 0-3.8 1.4-3.8 3.2v2.2h3.9v.8H6.7C4.5 8.2 3 9.5 3 12s1.5 3.8 3.7 3.8h1.5v-2.7c0-1.8 1.6-3.3 3.5-3.3h4.2c1.7 0 3.1-1.4 3.1-3.1V5.2C19 3.1 16.6 2 12 2Zm-2.2 2.1c.6 0 1 .5 1 1s-.4 1-1 1-1-.4-1-1 .5-1 1-1ZM12 22c3.2 0 3.8-1.4 3.8-3.2v-2.2h-3.9v-.8h5.4c2.2 0 3.7-1.3 3.7-3.8S19.5 8.2 17.3 8.2h-1.5v2.7c0 1.8-1.6 3.3-3.5 3.3H8.1C6.4 14.2 5 15.6 5 17.3v1.5C5 20.9 7.4 22 12 22Zm2.2-2.1c-.6 0-1-.5-1-1s.4-1 1-1 1 .4 1 1-.5 1-1 1Z" />
+    </svg>
+  );
+}
+
 export function ArrowRightIcon(props: IconProps) {
   return (
     <svg

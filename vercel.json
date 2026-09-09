@@ -32,6 +32,19 @@
       "root": "apps/php",
       "entrypoint": "Dockerfile"
     },
+    "python-fastapi": { "root": "apps/python-fastapi", "entrypoint": "Dockerfile" },
+    "python-flask": { "root": "apps/python-flask", "entrypoint": "Dockerfile" },
+    "python-flask2": { "root": "apps/python-flask2", "entrypoint": "Dockerfile" },
+    "python-flask3": { "root": "apps/python-flask3", "entrypoint": "Dockerfile" },
+    "python-starlette": { "root": "apps/python-starlette", "entrypoint": "Dockerfile" },
+    "python-django": { "root": "apps/python-django", "entrypoint": "Dockerfile" },
+    "python-django-notes": { "root": "apps/python-django-notes", "entrypoint": "Dockerfile" },
+    "python-django-rest-framework": { "root": "apps/python-django-rest-framework", "entrypoint": "Dockerfile" },
+    "python-hello-world": { "root": "apps/python-hello-world", "entrypoint": "Dockerfile" },
+    "python-celery": { "root": "apps/python-celery", "entrypoint": "Dockerfile" },
+    "python-queue-subscribers": { "root": "apps/python-queue-subscribers", "entrypoint": "Dockerfile" },
+    "python-litellm-gateway": { "root": "apps/python-litellm-gateway", "entrypoint": "Dockerfile" },
+    "python-vibe-coding-ide": { "root": "apps/python-vibe-coding-ide", "entrypoint": "Dockerfile" },
     "web": {
       "root": "apps/web",
       "framework": "nextjs"
@@ -101,6 +114,110 @@
     {
       "source": "/go",
       "destination": { "service": "go" }
+    },
+    {
+      "source": "/python-vibe-coding-ide/(.*)",
+      "destination": { "service": "python-vibe-coding-ide" }
+    },
+    {
+      "source": "/python-vibe-coding-ide",
+      "destination": { "service": "python-vibe-coding-ide" }
+    },
+    {
+      "source": "/python-litellm-gateway/(.*)",
+      "destination": { "service": "python-litellm-gateway" }
+    },
+    {
+      "source": "/python-litellm-gateway",
+      "destination": { "service": "python-litellm-gateway" }
+    },
+    {
+      "source": "/python-queue-subscribers/(.*)",
+      "destination": { "service": "python-queue-subscribers" }
+    },
+    {
+      "source": "/python-queue-subscribers",
+      "destination": { "service": "python-queue-subscribers" }
+    },
+    {
+      "source": "/python-celery/(.*)",
+      "destination": { "service": "python-celery" }
+    },
+    {
+      "source": "/python-celery",
+      "destination": { "service": "python-celery" }
+    },
+    {
+      "source": "/python-hello-world/(.*)",
+      "destination": { "service": "python-hello-world" }
+    },
+    {
+      "source": "/python-hello-world",
+      "destination": { "service": "python-hello-world" }
+    },
+    {
+      "source": "/python-django-rest-framework/(.*)",
+      "destination": { "service": "python-django-rest-framework" }
+    },
+    {
+      "source": "/python-django-rest-framework",
+      "destination": { "service": "python-django-rest-framework" }
+    },
+    {
+      "source": "/python-django-notes/(.*)",
+      "destination": { "service": "python-django-notes" }
+    },
+    {
+      "source": "/python-django-notes",
+      "destination": { "service": "python-django-notes" }
+    },
+    {
+      "source": "/python-django/(.*)",
+      "destination": { "service": "python-django" }
+    },
+    {
+      "source": "/python-django",
+      "destination": { "service": "python-django" }
+    },
+    {
+      "source": "/python-starlette/(.*)",
+      "destination": { "service": "python-starlette" }
+    },
+    {
+      "source": "/python-starlette",
+      "destination": { "service": "python-starlette" }
+    },
+    {
+      "source": "/python-flask3/(.*)",
+      "destination": { "service": "python-flask3" }
+    },
+    {
+      "source": "/python-flask3",
+      "destination": { "service": "python-flask3" }
+    },
+    {
+      "source": "/python-flask2/(.*)",
+      "destination": { "service": "python-flask2" }
+    },
+    {
+      "source": "/python-flask2",
+      "destination": { "service": "python-flask2" }
+    },
+    {
+      "source": "/python-flask/(.*)",
+      "destination": { "service": "python-flask" }
+    },
+    {
+      "source": "/python-flask",
+      "destination": { "service": "python-flask" }
+    },
+    {
+      "source": "/python-fastapi/(.*)",
+      "destination": { "service": "python-fastapi" }
+    },
+    {
+      "source": "/python-fastapi",
+      "destination": { "service": "python-fastapi" }
     },
     {
       "source": "/(.*)",
