@@ -220,6 +220,14 @@
       "destination": { "service": "python-fastapi" }
     },
     {
+      "source": "/json-render/(.*)",
+      "destination": { "service": "json-render" }
+    },
+    {
+      "source": "/json-render",
+      "destination": { "service": "json-render" }
+    },
+    {
       "source": "/(.*)",
       "destination": { "service": "web" }
     }
