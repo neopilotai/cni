@@ -1,4 +1,12 @@
 {
+	"name": "cni-packages-registry",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"typecheck": "tsc --noEmit"
+	},
 	"dependencies": {
 		"@vercel/blob": "^2.8.0",
 		"better-auth": "^1.7.3",

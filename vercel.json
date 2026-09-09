@@ -48,9 +48,21 @@
     "web": {
       "root": "apps/web",
       "framework": "nextjs"
+    },
+    "registry": {
+      "root": "apps/registry",
+      "framework": "nextjs"
     }
   },
   "rewrites": [
+    {
+      "source": "/packages/(.*)",
+      "destination": { "service": "registry" }
+    },
+    {
+      "source": "/packages",
+      "destination": { "service": "registry" }
+    },
     {
       "source": "/php/(.*)",
       "destination": { "service": "php" }
@@ -221,11 +233,11 @@
     },
     {
       "source": "/json-render/(.*)",
-      "destination": { "service": "json-render" }
+      "destination": { "service": "json_render" }
     },
     {
       "source": "/json-render",
-      "destination": { "service": "json-render" }
+      "destination": { "service": "json_render" }
     },
     {
       "source": "/(.*)",
