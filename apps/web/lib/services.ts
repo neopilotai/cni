@@ -127,6 +127,20 @@ export const services: Service[] = [
     Icon: PythonIcon,
   },
   {
+    name: "Python Flask 2",
+    route: "/python-flask2",
+    description: "A second Flask example from the Python collection.",
+    tags: ["python", "flask", "variant"],
+    Icon: PythonIcon,
+  },
+  {
+    name: "Python Flask 3",
+    route: "/python-flask3",
+    description: "A third Flask example from the Python collection.",
+    tags: ["python", "flask", "variant"],
+    Icon: PythonIcon,
+  },
+  {
     name: "Python Hello World",
     route: "/python-hello-world",
     description: "The smallest Python container service in the collection.",

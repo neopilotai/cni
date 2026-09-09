@@ -21,7 +21,7 @@ relatedTemplates:
 
 # Container Images Demo
 
-A collection of containerized services running as [Vercel Functions](https://vercel.com/docs/functions), each built from its own `Dockerfile` and routed through a single [`vercel.json`](./vercel.json). It showcases the Vercel Dockerfile runtime alongside the native Next.js runtime — nine independent services sharing one domain.
+A collection of containerized services running as [Vercel Functions](https://vercel.com/docs/functions), each built from its own `Dockerfile` and routed through a single [`vercel.json`](./vercel.json). It showcases the Vercel Dockerfile runtime alongside the native Next.js runtime — twenty independent services sharing one domain.
 
 ## Demo
 
@@ -40,6 +40,19 @@ https://container-images-demo.labs.vercel.dev
 | **doom** | `/doom` | Go, Xvfb, chocolate-doom, ffmpeg | Playable Doom streamed as MJPEG over WebSocket with keyboard/mouse input. |
 | **qr** | `/qr` | Go, go-qrcode | Stateless QR code generator with an optional centered logo. |
 | **php** | `/php` | Laravel 12, dompdf | Stateless PDF invoice generator. |
+| **python-fastapi** | `/python-fastapi` | FastAPI, Uvicorn | Typed async Python API. |
+| **python-flask** | `/python-flask` | Flask, Gunicorn | Minimal Flask service. |
+| **python-starlette** | `/python-starlette` | Starlette, Uvicorn | Lightweight ASGI service. |
+| **python-django** | `/python-django` | Django, Gunicorn | Django web application. |
+| **python-django-notes** | `/python-django-notes` | Django | Notes application. |
+| **python-django-rest-framework** | `/python-django-rest-framework` | Django REST Framework | REST API service. |
+| **python-flask2** | `/python-flask2` | Flask | Flask example variant. |
+| **python-flask3** | `/python-flask3` | Flask | Flask example variant. |
+| **python-hello-world** | `/python-hello-world` | Flask, Gunicorn | Minimal Python container. |
+| **python-celery** | `/python-celery` | Flask, Celery | Task worker pattern. |
+| **python-queue-subscribers** | `/python-queue-subscribers` | FastAPI | Queue subscriber health service. |
+| **python-litellm-gateway** | `/python-litellm-gateway` | LiteLLM, FastAPI | Model gateway example. |
+| **python-vibe-coding-ide** | `/python-vibe-coding-ide` | FastAPI | IDE backend service. |
 
 ## How It Works
 
