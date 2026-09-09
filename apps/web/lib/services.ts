@@ -175,4 +175,11 @@ export const services: Service[] = [
     tags: ["python", "fastapi", "ide"],
     Icon: PythonIcon,
   },
+  {
+    name: "json-render",
+    route: "/json-render",
+    description: "A constrained generative UI showcase powered by the Vercel Labs json-render framework.",
+    tags: ["generative UI", "react", "container"],
+    Icon: PythonIcon,
+  },
 ];
